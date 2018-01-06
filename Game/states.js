@@ -25,9 +25,9 @@ function gameState(){
     xBALL += xBVelocity;
     yBALL += yBVelocity;
     background(51);
-    rect(xBALL, yBALL, BALL_RADIUS, BALL_RADIUS);
     rect(xRIGHT, yRIGHT, PADDLE_WIDTH, PADDLE_HEIGHT);
     rect(xLEFT, yLEFT, PADDLE_WIDTH, PADDLE_HEIGHT);
+    rect(xBALL, yBALL, BALL_RADIUS, BALL_RADIUS);
     textSize(30);
     text(LPoint, 50, 30);
     text(RPoint, CANVAS_WIDTH - 60, 30);

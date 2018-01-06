@@ -26,6 +26,7 @@ function setup() {
   createCanvas(CANVAS_WIDTH,CANVAS_HEIGHT);
   rect(xBALL, yBALL, BALL_RADIUS, BALL_RADIUS);
   mainState();
+  frameRate(60);
 }
 
 function draw() {
@@ -67,6 +68,9 @@ function keyPressed(){
     yVelocityLEFT = 5;
   } else if (keyCode == 13) {
     gameON = true;
+    LPoint = 0;
+    RPoint = 0;
+    loop();
   } else if (keyCode == 16) {
     noLoop();
   } else if (keyCode == 8){
@@ -111,7 +115,7 @@ function alternateCollision(){
     if (yVelocityRIGHT >= 0){
       xBVelocity = -xBVelocity;
       xBALL = xRIGHT - BALL_RADIUS;
-    } else if (yVelocityLEFT < 0){
+    } else if (yVelocityRIGHT < 0){
       xBVelocity = -xBVelocity;
       yBVelocity = -yBVelocity;
       xBALL = xRIGHT - BALL_RADIUS;
