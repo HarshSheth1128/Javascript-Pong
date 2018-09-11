@@ -1,4 +1,4 @@
 # Javascript-Pong
 
 Play here:
-https://nyanman28.github.io/Javascript-Pong/Game/
+https://HarshSheth1128.github.io/Javascript-Pong/Game/
